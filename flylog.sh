@@ -2,7 +2,7 @@
 
 getLog() {
 
-    PS3="Enter the number: "
+    PS3="------------- "$'\n'"Enter the number: "
 
     appname=()
     appstatus=()
