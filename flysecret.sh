@@ -32,15 +32,11 @@ setSecret() {
   echo "----------------------------------------"
 
   while true; do
-    read -p "Enter the name: " name
-    if [ -z "$name" ]; then
+    read -p "Enter the key=value: " data
+    if [ -z "$data" ]; then
       break
     fi
-    read -p "Enter the value: " value
-    if [ -z "$value" ]; then
-      break
-    fi
-    params+=("$name=$value")
+    params+=("$data")
   done
 
   if [ -z $params ]; then
